@@ -1,18 +1,9 @@
-nome = 'sivaldo vieira'
-altura = 1.70000
-peso = 86
-imc = peso/(altura * altura)
+a = 'A'
+b = 'B'
+c = 1.1
 
 
-linha_1 = f'{nome} tem {altura:.2f} de altura'
-linha_2 = f'peso:{peso} quilos e seu imc é: '
-linha_3 = f'{imc:.2f} '
-print(linha_1)
-print(linha_2)
-print(linha_3)
+formato = 'a={0} b={1} c={2:.3f}'
 
-print('=='*10)
-#formatação de strings
 
-print(f'Seu nome é: {nome}')
-print(f'O seu peso é {peso}KG e sua altura é {altura:.2f}M por isso seu imc é: {imc}')
+print(formato)
