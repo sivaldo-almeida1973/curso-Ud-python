@@ -19,5 +19,14 @@ divisao_inteira = 10 // 3
 print('Divisão inteira:', divisao_inteira)
 
 
-Equação = 10 ** 2
-print('Equação:', Equação)
+exponenciacao = 10 ** 2
+print('Potencia:', exponenciacao)
+
+modulo = 10 % 4
+print('Resto da divisao:', modulo)
+
+print('==' * 20)
+
+print(10 % 8 == 0)
+print(16 % 8 == 0)
+print(2000 % 8 == 0)
