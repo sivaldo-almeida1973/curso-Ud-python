@@ -2,7 +2,7 @@
 # se , / se não se  ,  /se nao
 
 condicao1 = False
-condicao2 = True
+condicao2 = False
 condicao3 = False
 condicao4 = False
 
@@ -19,4 +19,7 @@ elif condicao4:
   print('A condicao 4 é  falso!')
 else:
   print('tudo é falso!')
+
+
+print('fora ')
 
