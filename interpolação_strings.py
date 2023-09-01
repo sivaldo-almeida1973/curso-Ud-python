@@ -6,7 +6,7 @@ d e i - int
 f - float
 x e X - hexadecimal (abcdef0123456789)
 
-
+mesma coisa que format e f-strings
 """
 
 
