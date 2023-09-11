@@ -35,6 +35,28 @@ lista2.append("Maracana")
 
 print(f'lista=2:',lista2)
 
+lista5.extend(['Abacaxi','1.99', 'KG'])
+print(lista5)
+
+#adicionar valor em lista:Insert, adiciona em um determinado indice
+#não substitui o valor atual ,empurra pra frente
+lista4.insert(1,'aqui')
+print(lista4)
+
+#concatenar duas ou mais listas
+listaSomada = lista2 + lista3
+print(listaSomada)
+
+
+#lista2 = lista2 + lista4
+#print(lista2)
+
+print(10*'=')
+
+#lista2.append(lista4)
+#print(lista2)
+
+
 """
 
 
@@ -56,9 +78,14 @@ lista5 = ["Tatu","Roxo","Camelo"]
 lista6 = list("sivaldo vieira de almeida") #converte uma string para lista
 lista7 = [43, True, "Abacate", "Russia", "X", [1,2,34]]
 
+#converter string em lista- Split: cria uma lista separando um string por seus espaços(' ')(padrão)
+frase = "Hoje é um novo dia, um novo tempo já começou"
+listaNova = frase.split()
+print(listaNova)
 
-lista5.extend(['Abacaxi','1.99', 'KG'])
-print(lista5)
+#bos: é possivel indicar o parametro de separação
 
-lista4.extend(12)
+listaNova = frase.split(',')
+print(listaNova)
+
 
