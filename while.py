@@ -4,18 +4,14 @@ executa enquanto for verdade
 """
 
 
-condicao = True
+contador = 0
 
-while condicao:
-  nome = input('qual seu nome? ')
-  print('seu nome é {nome}')
+while contador < 10:
+  contador = contador + 1
+  print(contador)
 
 
-  if nome == 'sair':
-   break
-
-print('acabou!')
-
+print('acabou')
 
 
 
