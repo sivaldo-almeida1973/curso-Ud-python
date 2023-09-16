@@ -17,7 +17,7 @@ preco2 = float(input('Preço2: '))
 total2 = preco2 * quantidade2
 
 print('------------total a Pagar item 2--------------')
-print(f'{cod2} {quantidade2} {preco2}Tota Pagar {total2}')
+print(f'{cod2} {quantidade2} {preco2}Total Pagar {total2}')
 
 print('------------Item 3--------------')
 
