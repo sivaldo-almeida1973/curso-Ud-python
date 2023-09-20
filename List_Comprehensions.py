@@ -30,7 +30,37 @@ print(pares[5])
 print(sum(pares))
 print(sum(impares))
 
+=======================================================================
+#for (if)
+numeros = list(range(1,10))
+
+pares = [num * 10 for num in numeros if num % 2 == 0]
+
+impares = [num ** 2 for num in numeros if num % 2 != 0]
+
+
+print(pares)
+print(impares)
+
+
+=============================================================================
+#Else
+
+numeros = list(range(1, 20)) 
+
+nova = [num if num <= 10 else num * 10 for num in numeros]
+
+print(nova)
+
+
 """
 
-#list Comprehensions com estrturas condicionais
+#list Comprehensions em matrizes
+
+matriz = [[1,2,3],[4,5,6],[7,8,9]]
+
+[[ print(num, end=' ')for num in linha]for linha in matriz]
+
+matriz3 = [[num * 3 for num in linha]for linha in matriz]
+print(f"\n{matriz3}")
 
