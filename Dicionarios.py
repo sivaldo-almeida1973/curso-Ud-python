@@ -124,9 +124,49 @@ print(sagas)
 
 # forma 2 ==================================================
 
+sagas = {
+  (1,2):'HP',
+  (3,4):'PJ',
+  (4,6):'JV'
+}
+
+dado_novo = {(7,8) : 'MR'}
+
+#ADICIONAR
+sagas.update(dado_novo)
+sagas.update({(1,2):'Digimon'}) #substituir elementos na chave 1,2 por digimon
+print(dado_novo)
+print(sagas)
+
+# 1 Remover valores================================================
+
+pokemon = {
+  'Agua':'squirtle',
+  'Fogo':'Chamander',
+  'Grama':'Bulbassauro'
+}
+
+
+#Remover
+print(pokemon)
+pokemon.pop('Agua')
+
+print(pokemon)
+
+
+
 """
 
+pokemon = {
+  'Agua':'squirtle',
+  'Fogo':'Chamander',
+  'Grama':'Bulbassauro'
+}
 
 
+#Remover==================================================
+del pokemon['Agua']
+
+print(pokemon)
 
 
