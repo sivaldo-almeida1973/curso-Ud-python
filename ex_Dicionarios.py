@@ -25,7 +25,7 @@ heroi_escolhido = input('Digite o heroi escolhido:')
 arma_escolhido = input('Digite a arma escolhida')
 vilao_escolhido = input('Digite o vilao escolhido')
 
-
+#soma de heroi com armas
 nivel_poder_heroi_arma = herois[heroi_escolhido] + armas[arma_escolhido]
 
 
