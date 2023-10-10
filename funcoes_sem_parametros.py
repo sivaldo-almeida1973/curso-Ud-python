@@ -1,5 +1,5 @@
 """
-O que soa funcoes
+O que sao funcoes
 
 _blocos de cod. que irao executar uma tarefa especifica, podendo ser reutilizavel
 -Tem por papel organizar, diminuir seu programa e facilitar alteraçoes e gerenciamento.
@@ -109,6 +109,9 @@ def celsius_Kelvin():
   if sair == 'sim':
     return 'Acabou'
   else:
-   return celsius_Kelvin()
+   return celsius_Kelvin()#retornando para ele mesmo,usar ()
 
 print(celsius_Kelvin())
+
+
+#ObS: Sempre lembre de uma condicao de parada, para evitar o Loop Inf.
