@@ -73,9 +73,6 @@ comida()
 
 """
 
-
-
-
 # Comando local(funcao dentro de funcao)================
 
 def funFora(): #criar funcao
