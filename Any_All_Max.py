@@ -71,10 +71,10 @@ print(min(cores)) #ira retornar ordem alfabeto
 
 alunos = [ 'xaximiliano','jose','guti','sivaldo','francisco']
 
-print(max(alunos))
+print(max(alunos)) #ordem alfab
 print(min(alunos))
 
 #pagar o maior nome e o menor
 
-print(max(alunos, key=lambda aluno: len(aluno)))
+print(max(alunos, key=lambda aluno: len(aluno))) #alterando a Key
 print(min(alunos, key=lambda aluno: len(aluno)))
