@@ -8,7 +8,8 @@ def idades(**kwargs):
 
 idades(maria=40, marcos=30, pedro=60) # passar chave e dado
 
-"""
+
+========================================
 
 #Exemplo 2:
 def jogadas(nome,**kwargs):
@@ -20,3 +21,26 @@ def jogadas(nome,**kwargs):
 
 print(jogadas("Marcelo", j=16,j2=3,j3=45))
 print(jogadas("Marcos", j=16,j2=3,j3=45,j4=10))
+
+
+=======================================
+
+#Exemplo de kwargs com dicionario
+
+def apresentaNotas(**kwargs):
+  for aluno in kwargs:
+    print(f'{aluno}: {kwargs[aluno]}')
+
+notas = {'Joao':7.0,'Marcos':8.0, 'Maria':'0'}
+
+apresentaNotas(**notas)
+    
+
+
+"""
+def apresntarNotas(joao, carlos, jessica):
+  print(f'joao: {joao}, carlos: {carlos}, jessica: {jessica}')
+
+notas = {'joao': 7, 'carlos':8, 'jessica': 10}
+
+apresntarNotas(**notas)
