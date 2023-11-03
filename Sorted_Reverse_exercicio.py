@@ -5,7 +5,7 @@ Exercicio:
 numeroInt = 1
 listaNum = []
 
-while numeroInt != 0: #se numerosInt for diferente de 0
+while numeroInt != 0: #se numerosInt for diferente de 0 , se for 0 sai
   numeroInt = int(input('Digite um numero inteiro: ')) #recebe do usuario e faz cast
   if numeroInt != 0: #numeroInt diferente de 0 
     listaNum.append(numeroInt)  #adiciona na listaNum
