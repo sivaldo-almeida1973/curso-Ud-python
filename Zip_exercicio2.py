@@ -1,11 +1,11 @@
 #criar ters listas
-companhias = ['Latam','Azul','Gol']
-voo1 = {115,95,110}
-voo2 = {195,88,225}
+companhias = ['Gol','Latam','Azul']
+voo1 = [115,95,110]
+voo2 = [195,88,225]
 
 #zipar o numero de passageiros em cada voo
 voos1e2 = zip(voo1, voo2)# junta os num de passag de cada companhia
-maxPass = map(lambda voos:max(voos), voos1e2)#determ valor max de passag por companhia entre os voos 1 e 2
+maxPass = map(lambda voos: max(voos), voos1e2)#determ valor max de passag por companhia entre os voos 1 e 2
 listaMaxPass = list(maxPass ) #converter para lista
 
 
