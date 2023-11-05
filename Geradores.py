@@ -92,13 +92,37 @@ print(f'Generator Levou: {tfinalGen}')
 #Lista levou: 13.534432411193848
 #Generator Levou: 14.124512195587158
 
+-------------------------------------------------------------
+
+#Teste de memoria-------------------------------
+#fibonacci 100000
+# 1,1,2,3,5,8,13,21
+#lista----------------------------------
+def fibonacci(max):
+  sequencia = []
+  x,y = 0,1
+  while len(sequencia) < max:
+    sequencia.append(y)
+    x,y = y, x+y
+  return sequencia
+for x in fibonacci(100000):
+  print(x)
+
+
 """
 
 
 
-#Teste de memoria-------------------------------
-#fibonacci 100000
 
-lista
+#Gerador-------------------------------
 
+def fibonacci(max):
+  x,y, contador = 0,1,0
+  while contador < max:
+    x,y = y, x+y
+    yield x
+    contador = contador + 1
+
+for x in fibonacci(1000):
+  print(x)
 
