@@ -30,7 +30,7 @@ class Jogo:
 
   
   def __pular_nivel(self): #Metodo privado
-     self.nivel += 1
+     Jogo.nivel += 1
      self.__nivel = Jogo.nivel
 
   def exercicio(self):
