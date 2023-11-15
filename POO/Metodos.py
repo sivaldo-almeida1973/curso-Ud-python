@@ -176,7 +176,7 @@ class Computador:
 
 
 
-  #metodo consttruto ,tem o __init__
+  #metodo consttrutor ,tem o __init__
   def __init__(self, cor , peso, polegadas):
     self.cor = cor
     self.peso = peso
