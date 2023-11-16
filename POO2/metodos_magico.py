@@ -30,11 +30,19 @@ class Carro:
   def __mul__(self, other):
     if isinstance(other, int): #realiza a checagem se é inteiro
       result = ' '
-      for i in range(other): #para cada numero num range de other(5) 0 1 2 3 4
+      for i in range(other): #para cada numero range de other(5) 0 1 2 3 4
         result += ' ' + str(self) #result recebe ele mesmo concat com espaço, cast para str
       return result
     return "É necessario um numero inteiro para multiplicar!"
   
+  # tamanho numero int
+  def __len__(self):
+    return self.portas
+  
+  def __del__(self):
+    print('objeto do tipo Carro deletado!')
+
+
 
 carro1 = Carro('Branco', 4, 50000, 2022)
 carro2 = Carro('Vermelho', 4, 100000, 2023)
@@ -45,3 +53,5 @@ print(carro2)
 print(carro1 + carro2)  #precisa do def __add__ para concatenar
 
 print(carro1 * 5) #self = carro1 e other = 5  (mul)
+
+print(len(carro1))
