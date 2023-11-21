@@ -79,6 +79,6 @@ def gritar(palavra):
   """
   Transforma a palavra em letras maiusculas
   >>> gritar('gollllll')
-  '''GOLLLLLL'''
+  'GOLLLLLL'
   """
-  return f'''{palavra.upper()}'''
+  return f'{palavra.upper()}'
