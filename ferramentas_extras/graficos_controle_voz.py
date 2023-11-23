@@ -73,7 +73,7 @@ from os import system
 
 class Comandos:
 
-  def assitente_ouvir(self):
+  def assistente_ouvir(self):
     rec = Recognizer()
     with Microphone() as source:
       print('Fale...')
@@ -82,7 +82,7 @@ class Comandos:
       try:
         print('Reconhecendo voz...')
         palavras = (rec.recognize_google(audio, language='pt-br')).lower()
-        print(f"frase dita: '{palavras}'")
+        print(f"Frase dita: '{palavras}'")
       except:
         print('-----Não estou ouvindo!')
         return 'None'
@@ -104,7 +104,7 @@ class Comandos:
         if 'sim' in decisao:
           print('-----Desligando o computador!')
           self.assistente_falar('Desligando o computador!')
-          system('shutdown /s /t 300')
+          system('shutdown /s /t 300')#caso queira somente reiniciar(r) no lugar de (s)
         else:
           print('-----Não vou desligar!')
           self.assistente_falar('Não vou desligar!')
